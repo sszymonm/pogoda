@@ -1,0 +1,72 @@
+App\Entity\Location:
+  properties:
+    city:
+      - NotBlank:
+          message: 'City name cannot be blank.'
+          groups: ['new', 'edit']
+      - Length:
+          max: 50
+          maxMessage: 'City name cannot exceed 50 characters.'
+          groups: ['new', 'edit']
+    country:
+      - NotBlank: { groups: ['new', 'edit'] }
+    latitude:
+      - NotBlank:
+          message: 'Latitude cannot be blank.'
+          groups: [ 'new', 'edit' ]
+      - Regex:
+          pattern: '/^-?(?:90(?:\.0{1,7})?|[1-8]?\d(?:\.\d{1,7})?)$/'
+          message: 'Latitude must be a valid decimal number between -90 and 90 with up to 7 decimal places.'
+          groups: [ 'new', 'edit' ]
+    longtitude:
+        - NotBlank:
+            message: 'Longitude cannot be blank.'
+            groups: [ 'new', 'edit' ]
+        - Regex:
+            pattern: '/^-?(?:180(?:\.0{1,7})?|1[0-7]\d(?:\.\d{1,7})?|[1-9]?\d(?:\.\d{1,7})?)$/'
+            message: 'Longitude must be a valid decimal number between -180 and 180 with up to 7 decimal places.'
+            groups: [ 'new', 'edit' ]
+
+App\Entity\Measurement:
+  properties:
+    date:
+      - NotBlank: { groups: ['new', 'edit'] }
+      - Type:
+          type: 'datetime'
+          message: 'The date must be a valid datetime format.'
+          groups: ['new', 'edit']
+    celsius:
+      - NotBlank: { groups: ['new', 'edit'] }
+      - Type:
+          type: 'numeric'
+          message: 'Temperature must be a numeric value.'
+          groups: ['new', 'edit']
+      - Range:
+          min: -50
+          max: 60
+          notInRangeMessage: 'Temperature must be between -50 and 60 degrees Celsius.'
+          groups: ['new', 'edit']
+    pressure:
+      - NotBlank: { groups: ['new', 'edit'] }
+      - Type:
+          type: 'numeric'
+          message: 'Pressure must be a numeric value.'
+          groups: ['new', 'edit']
+      - Range:
+          min: 800
+          max: 1200
+          notInRangeMessage: 'Pressure must be between 800 and 1200 hPa.'
+          groups: ['new', 'edit']
+    humidity:
+      - NotBlank: { groups: ['new', 'edit'] }
+      - Range:
+          min: 0
+          max: 100
+          notInRangeMessage: 'Humidity must be between 0 and 100%.'
+          groups: ['new', 'edit']
+    location:
+      - NotBlank: { groups: ['new', 'edit'] }
+      - Type:
+          type: 'App\Entity\Location'
+          message: 'Location must be a valid Location entity.'
+          groups: ['new', 'edit']
