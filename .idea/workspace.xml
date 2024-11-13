@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59a90abc-3ca5-45ed-9f36-6ae7e2de5c1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d0c6dde-9297-44c3-99bc-37308534f45b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8d0c6dde-9297-44c3-99bc-37308534f45b.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/WeatherCountryCityCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/WeatherLocationCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/WeatherUtil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d38f18b7-98f2-4dc3-b7e7-d01ed9726b0d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d38f18b7-98f2-4dc3-b7e7-d01ed9726b0d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/LocationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MeasurementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MeasurementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/location/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/location/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/measurement/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/measurement/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WeatherController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,27 +171,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/nomis/Desktop/AI2/pogodynka/var/data.db",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nomis/Desktop/AI2/pogodynka/var/data.db&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nomis\Desktop\AI2\pogodynka\config\validator" />
@@ -237,7 +229,9 @@
       <workItem from="1730053392320" duration="1633000" />
       <workItem from="1730564670648" duration="457000" />
       <workItem from="1730565591131" duration="1598000" />
-      <workItem from="1730736028208" duration="4911000" />
+      <workItem from="1730736028208" duration="5558000" />
+      <workItem from="1730966165045" duration="1561000" />
+      <workItem from="1731515362605" duration="2612000" />
     </task>
     <servers />
   </component>
